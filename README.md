@@ -32,3 +32,6 @@ To strictly respect the university's academic integrity policies and the profess
 1. The original assignment PDF containing the full requirements has not been uploaded.
 2. The `main.cpp` file for the Client application, which was provided by the professor as boilerplate code, has been intentionally excluded from this public repository. 
 The system is built so that my client-side classes seamlessly interface with the provided (but omitted) main executable.
+
+## 👤 Author
+* **Eugenio Delli Carri**
