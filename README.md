@@ -14,16 +14,16 @@ The core of the system relies heavily on **multithreading** to manage concurrent
 ## 🚀 Highlighted Skills & Core Concepts
 This project was designed to demonstrate advanced C++ programming techniques:
 
-* **Object-Oriented Programming (OOP):** The codebase is heavily modularized with a strict separation of concerns between the robot's internal logic, mechanisms (Base, Arm, Battery), and control interfaces. Each class autonomously manages its own state to ensure data consistency.
-* **Concurrent Programming (Multithreading):** Implementation of safe, concurrent execution threads to handle simultaneous physical simulations (e.g., the battery draining while the arm moves) and non-blocking network request handling.
-* **Socket Programming:** Custom implementation of a TCP/IP networking layer to handle reliable, structured packet transmission between the remote controllers (Clients) and the robot (Server).
+* **Object-Oriented Programming (OOP):** the codebase is heavily modularized with a strict separation of concerns between the robot's internal logic, mechanisms (Base, Arm, Battery), and control interfaces. Each class autonomously manages its own state to ensure data consistency.
+* **Concurrent Programming (Multithreading):** implementation of safe, concurrent execution threads to handle simultaneous physical simulations (e.g., the battery draining while the arm moves) and non-blocking network request handling.
+* **Socket Programming:** custom implementation of a TCP/IP networking layer to handle reliable, structured packet transmission between the remote controllers (Clients) and the robot (Server).
 
 
 ## ⚙️ System Architecture
-* **The Server (Robot):** Maintains the physical state of the mobile base, arm, gripper, and battery. It continuously listens for incoming connections and executes commands asynchronously.
+* **The Server (Robot):** maintains the physical state of the mobile base, arm, gripper, and battery. It continuously listens for incoming connections and executes commands asynchronously.
 * **The Clients (Controllers):**
-  * *Joypad:* Can send movement vectors, actuate the arm/gripper, and request telemetry (position, battery status).
-  * *Safety Button:* A restricted client that can only send emergency commands (`ACTIVATE`, `DEACTIVATE`, `STOP`).
+  * *Joypad:* can send movement vectors, actuate the arm/gripper, and request telemetry (position, battery status).
+  * *Safety Button:* a restricted client that can only send emergency commands (`ACTIVATE`, `DEACTIVATE`, `STOP`).
 
 ## ⚠️ Academic Integrity Disclaimer
 This repository contains my personal, original implementation of the project's logic and classes. 
